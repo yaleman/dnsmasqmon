@@ -6,7 +6,7 @@ A quick monitoring script using `dig` and some bash to dump the data out of `dns
 
 It'll work remotely if you've got DNS allowed remotely, I piped this through `jq` for display purposes.
 
-```json
+```shell
 ./dnsmasqmon.sh anotherhost.example.com | jq . 
 {
   "timestamp": "2022-08-30T20:22:25+10:00",
